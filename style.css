@@ -1,0 +1,494 @@
+* {                 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #f1f1f1; 
+}
+
+h2,h4 {
+    font-family: 'merriweather';
+    padding-bottom: 10px;
+}
+
+h6 {
+    padding-bottom: 10px;
+}
+
+.btn {
+    border: none;
+    box-shadow: 0 5px #c4bebe;   
+}
+
+.btn:hover {
+    background-color: #1fa67a;
+}
+
+.btn:active {
+    box-shadow: 0 5px #a7a1a1;
+    transform: translateY(4px);
+}
+
+/* Navbar starts */
+
+.navbar {
+    background-color: #616161;
+    display: flex;
+    padding: 15px 25px;
+    color: #fff;
+    position: fixed;   /* Set the navbar to fixed position */
+    top: 0;   /* Position the navbar at the top of the page */
+    width: 100%;
+    z-index: 1;   /* overhide */
+}
+
+.navbar h3 {
+    margin-bottom: 0px;
+}
+
+.list_items {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 0px;
+}
+
+.list_item {
+    padding: 0 15px;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a5d8c7;
+} 
+
+.navbar_toggle {
+    display: none;
+}
+
+hr {
+    display: none;
+}
+
+/* Navbar finish */
+
+.hero {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 80px 0 rgba(153, 153, 153, 0.3);
+    display: flex;
+    position: relative;        
+    bottom: -150px;
+    padding: 40px 50px;
+   
+}
+
+.hero_description {
+    text-align: left;
+    float: left;
+    margin-top: 30px;
+}
+
+.hero_details {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+}
+
+.hero_cont {
+    color: black;
+}
+
+.btn_resume {
+    margin-top: 25px;
+    background-color: #f1f1f1;
+}
+
+.hero_image {
+    display: flex;
+    justify-content: right;   
+}
+
+.image {
+    border-radius: 10px;
+    width: 70%
+}   
+
+/* Hero section finish */
+
+.text {
+    font-family: "merriweather";
+    text-align: center;
+    color: #1fa67a;
+    padding-top: 70px;
+}
+
+.about_text {
+    background-color: #fff;
+    padding-top: 300px;
+    padding-bottom: 150px;
+} 
+
+.experience_heading {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 120px 0;
+}
+
+.btn_exp {
+    margin-right: 25px;
+    box-shadow: none;
+    transform: none;
+}
+
+.experience_details {
+    display: flex;
+    justify-content: center;
+}
+
+.experience_detail {
+    list-style-type: none;
+}
+
+.detail_head {
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+.detail_text {
+    border-inline-start: rgba(31,166,122,0.5) 3px dotted;
+    position: relative;
+    left: 150px;
+    top: -40px;
+    padding-left: 40px;
+}
+
+/* About section finish */
+
+#skill_section {
+    background-color: #f9f9ff;
+}
+
+.skill_percentage {
+    margin-top: 5%;
+    padding-bottom: 50px;
+}
+
+.skills {
+    width: 70%;
+    background-color: #f1f1f1;
+    margin-bottom: 30px;
+    border-radius: 16px;
+}
+
+.skill  {
+    background-color: #1fa67a;
+    text-align: right;
+    border-radius: 16px;
+    display: flex;
+}
+
+span {
+    margin: auto;
+}
+
+.python { width: 85%;}
+.sql { width: 90%;}
+.html { width: 95%;}
+.css { width: 90%;}
+.web { width: 70%;} 
+
+.load {
+    animation: loading 2s linear;
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+}
+ 
+/* Skill section finish */
+ 
+.projects {
+    display: flex;
+    text-align: center; 
+    padding-bottom: 30px;
+    margin-bottom: 80px;
+}
+
+.project_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    color: #fff;
+    background: linear-gradient(rgba(0,0,0,0.6), #1fa67a);
+    border-radius: 10px;
+    position: absolute;
+    padding-left: 30px;
+    padding-right: 30px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.project:hover .layer{
+    height: 100%;
+}
+
+.layer h3 {
+   
+    margin-bottom: 10px;
+}
+
+.layer a {
+    color: #1fa67a;
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+
+/* Project section finish */
+
+#contact_section {
+    background-color: #fff;
+}
+
+.contact {
+    padding-top: 5%;
+}
+
+.contact_details {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.input {
+    margin-bottom: 15px;
+    width: 60%;
+    padding: 10px 0 10px 10px;
+}
+
+.btn_msg {
+    margin: 20px 0 50px 0;
+    background-color: #f1f1f1;
+}
+
+/* Contact section finish */
+
+footer {
+    background-color: #1fa67a;
+    color: #a5d8c7;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.footer_link {
+    color: #a5d8c7;
+    padding: 3px;
+}
+
+.footer_link:hover .fa{
+    transform: scale(1.3);
+}
+
+.footer_para {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar, .list_items {
+        flex-direction: column;  
+    }
+
+    .list_item {
+        padding-left: 0px;
+    }
+
+    .navbar_brand {
+        margin-right: auto;
+        padding-top: 8px;
+        padding-bottom: 10px;
+    }
+
+    .navbar_items {
+        display: none;
+        margin-right: auto;
+    }
+
+    .navbar__ToggleShow {
+        display: flex;
+      }
+
+    .navbar_toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+        padding-top: 8px;
+      }
+
+      .navbar_toggle i {
+        font-size: 25px;
+      }
+
+      .hero {
+        flex-direction: column-reverse;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      .hero_description {
+        margin: 40px 100px 20px;
+      }
+
+      .hero_text {
+        text-align: justify;
+      }
+
+      .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 50%;
+      }
+
+      ul {
+        padding-left: 0;
+      }
+
+      .experience_heading {
+        padding-bottom: 90px;
+      }
+
+      .experience_details {
+        position: relative;
+        right: 30px;
+      }
+}
+
+@media (max-width: 425px) {
+    .hero_description {
+        margin: 40px 48px 20px;
+    }
+
+    .fa-icon, .hero_cont {
+        font-size: 13px;
+    }
+
+    .name_style {
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+
+    .about_text {
+        padding: 250px 0 100px 0;
+    } 
+
+    .experience_heading {
+        padding: 80px 28px 50px 50px;
+    }
+
+    .experience_details {
+        right: 15px;
+    }
+
+    .detail_head {
+        position: initial;
+        padding-left: 50px;
+    }
+
+    .detail_text {
+        position: initial;
+        border-inline-start: none;
+        margin: 20px 0 70px 0;
+        padding-left: 50px;
+    }
+
+    .skill_percentage, .contact {
+        padding-left: 50px;
+        margin-top: 50px;
+    }
+
+    .skills {
+        width: 90%;
+        height: 20px;
+    }
+
+    .skill {
+        height: 20px;
+    }
+
+    .projects {
+        padding: 0px 50px;
+    }
+
+    .project_text, .contact_text {
+        padding-top: 60px;
+    }
+
+    .contact_details {
+        margin-bottom: 30px;
+    }
+
+    .contact {
+        margin-top: 0px;
+    }
+
+    form {
+        margin-top: 30px;
+    }
+
+    .input {
+        width: 85%;
+    }
+}
